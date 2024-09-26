@@ -5,8 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const myAppProps = { greeting: "react.js" };
 root.render(
-  React.createElement(App, { greeting: "react.js" }, null)
+  React.createElement("div", null,
+    React.createElement(App, myAppProps, null),
+    React.createElement(App, { greeting: "Vue.js" }, null)
+  )
 );
 
 // root.render(
