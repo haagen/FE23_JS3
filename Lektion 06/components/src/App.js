@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <SimpleClassComponent name="Tyson" /><br />
       <ComplexClassComponent startNumber={ 1337 } /><br />
-      {/* <DanskSkola /> */}
+      <DanskSkola />
       <SimpleFunctionComponent name="Charlie" /><br />
       <ComplexFunctionComponent startNumber={ 7331 } /><br />
     </div>

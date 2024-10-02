@@ -1,8 +1,14 @@
 import React from "react";
+import { useState } from "react";
 
 /*
  Uttalar man Dansskola slarvigt blir det Dansk Skola!
 */
+
+/*
+  Som Klass-komponent
+*/
+/*
 class DanskSkola extends React.Component {
 
     state = { };
@@ -31,6 +37,31 @@ class DanskSkola extends React.Component {
         );
     }
 }
+*/
+
+/*
+ Som funktionskomponent
+*/
+
+const DanskSkola = () => {
+
+    const [ visible, setVisible ] = useState(false);
+    
+    const onClick = () => {
+        setVisible(!visible);
+    }
+
+    return (
+        <>
+            <h1>Dansk Skola</h1>
+            <button onClick={ onClick }>
+                { visible ? <>Dölj</> : <>Visa</> }
+            </button><br />
+             { visible && <ContentComponent title="Danska för Svenskar" description="Danska bla bla bla" /> }
+        </>
+    );
+}
+
 
 /*
  * Content Component kommer att används i DanskSkola för ett
