@@ -1,0 +1,14 @@
+
+
+li {
+    list-style-type: none;
+}
+
+.messageList {
+    width: 60%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+

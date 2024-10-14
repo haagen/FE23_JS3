@@ -1,0 +1,23 @@
+
+
+
+input, textarea, button {
+  display: block;
+}
+
+textarea {
+  width: 100%;
+}
+
+.chatBox {
+  width: 18%;
+}
+
+.app {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin:0;
+  padding:0;
+  width: 100%;
+}
