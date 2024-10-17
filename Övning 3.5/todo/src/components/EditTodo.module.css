@@ -1,0 +1,4 @@
+
+.editBox input, .editBox label, .editBox textarea {
+    display: block;
+}
