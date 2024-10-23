@@ -4,9 +4,11 @@ import './App.css';
 function App() {
 
   const [ state, setState ] = useState({});
+console.log(state);
 
   const nameRef = useRef();
   const emailRef = useRef();
+  const colorRef = useRef();
 
 
   useEffect(() => {
@@ -38,6 +40,9 @@ function App() {
     switch(e.target.name) {
       case 'name':
         emailRef.current.focus();
+        break;
+      case 'email':
+        colorRef.current.focus();
         break;
     }
   };
@@ -72,7 +77,12 @@ function App() {
           state.emailValid && (
             <>
               <label htmlFor="color">Favorit färg</label>
-              <select name="color" id="color" value={ state.color }>
+              <select 
+                name="color" 
+                id="color" 
+                value={ state.color } 
+                ref={ colorRef }
+              >
                 <option value=""></option>
                 <option value="green">Grön</option>
                 <option value="blue">Blå</option>
