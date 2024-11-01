@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Webbplats - Tillgänglig</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+            background-color: #ffffff;
+        }
+        .header {
+            font-size: 28px;
+            color: #000;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .link-list a {
+            color: #1a73e8;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="header">Välkommen till Min Tillgängliga Webbplats</h1>
+    </header>
+    <main class="content">
+        <p>Detta är en tillgänglig webbplats för demonstration.</p>
+        <nav class="link-list" aria-label="Länknavigering">
+            <ul>
+                <li><a href="#link1">Länk 1</a></li>
+                <li><a href="#link2">Länk 2</a></li>
+                <li><a href="#link3">Länk 3</a></li>
+            </ul>
+        </nav>
+    </main>
+    <form class="form" aria-labelledby="form-header">
+        <h2 id="form-header">Kontakta oss</h2>
+        <label for="name">Namn</label>
+        <input type="text" id="name" name="name" required aria-required="true">
+        
+        <label for="email">E-post</label>
+        <input type="email" id="email" name="email" required aria-required="true">
+        
+        <button type="submit">Skicka</button>
+    </form>
+</body>
+</html>
