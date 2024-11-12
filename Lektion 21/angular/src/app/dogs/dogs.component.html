@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="row">
+        <div class="col" *ngFor="let dog of dogs">
+            <app-dog [data]="dog" *ngIf="dog.name != 'Satan'"></app-dog>
+        </div>
+    </div>
+</div>

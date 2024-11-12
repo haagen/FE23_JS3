@@ -10,11 +10,6 @@ import { Dog } from '../../types';
 })
 export class DogComponent {
 
-  @Input() data:Dog = {
-    name: 'Boss',
-    breed: 'Border Collie',
-    url: '/images/dog-border-collie.jpeg',
-    description: 'Lorem Ipsum'
-  }
+  @Input() data:Dog = { name: '', breed: '', url: '', description: '' }
 
 }
