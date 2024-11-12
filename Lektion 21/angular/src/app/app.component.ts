@@ -15,5 +15,5 @@ import { Dog } from '../types';
 })
 export class AppComponent {
   title = 'angular';
-  thisDog:Dog = { name: 'N', url: '/images/dog-border-collie.jpeg', breed: 'b', description: 'asdasd' };
+  //thisDog:Dog = { name: 'N', url: '/images/dog-border-collie.jpeg', breed: 'b', description: 'asdasd' };
 }
